@@ -6,5 +6,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'todo-app';
+  tasks: string[] = ['Fundamentos de Angular','Componentes y Servicios']
+
+  newName = '';
+
+  addTask(){
+    this.tasks.push(this.newName);
+    this.newName = '';
+  }
+
+  deleteTask(index: number){
+    this.tasks.splice(index,1);
+  }
+  
 }

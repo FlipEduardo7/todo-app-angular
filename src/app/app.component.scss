@@ -1,0 +1,48 @@
+h1{
+  text-align: center;
+}
+
+button{
+  border-radius: 10px;
+  padding: 6px;
+  cursor: pointer;
+  border: none;
+}
+#delete{
+  background-color: rgb(198, 4, 4);
+  &:hover{
+    background-color: red;
+  }
+}
+#add{
+  background-color: #01a201;
+  &:hover{
+    background-color: #00FF00;
+    color: black;
+  }
+}
+
+input{
+  background-color: #3d3d3d;
+  padding: 6px;
+  margin: 8px;
+  border-radius: 10px;
+  border: 1px solid #00FF00;
+}
+
+div ul{
+  list-style: none;
+}
+
+.list{
+  margin: 40px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.add-task{
+  display: grid;
+  place-items: center;
+}
